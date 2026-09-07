@@ -4,11 +4,11 @@ A cinematic, interactive laser-flow experience built with **React, TypeScript, T
 
 An experimental WebGL showcase featuring mouse interaction, customizable laser colors, live controls, animated wisps, fog intensity, and interactive pulse effects.
 
-## ✨ Preview
+## Preview
 
-![Laser Flow UI Preview](src/assets/laser-flow-preview.png)
+[Laser Flow UI Preview](src/assets/laser-flow.png)
 
-## 🎯 About the Project
+## About the Project
 
 **Laser Flow** is an interactive WebGL experiment created to explore real-time visual effects on the web.
 
@@ -16,7 +16,7 @@ The project combines a volumetric laser shader with a minimal futuristic interfa
 
 Move your cursor around the screen, experiment with different laser settings, change colors, and trigger the laser pulse in real time.
 
-## 🚀 Features
+## Features
 
 - ✦ Real-time WebGL laser effect
 - Mouse-responsive laser movement
@@ -113,7 +113,7 @@ laser-flow-showcase/
 | `vite.config.ts` | Vite configuration |
 | `README.md` | Project documentation |
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 Before running the project, make sure you have Node.js installed. Check your Node.js version:
 
@@ -165,7 +165,7 @@ The application will be available at the local URL displayed in your terminal (u
 | `npm run preview` | Previews the production build |
 | `npm run lint` | Runs Oxlint to check the code |
 
-## 🎛️ LaserFlow Component
+## LaserFlow Component
 
 The main visual effect is provided by the `LaserFlow` component. It can be imported into any React component:
 
@@ -237,7 +237,7 @@ The **Randomize** button generates a new configuration by changing:
 * Fog intensity
 * Flow intensity
 
-### ↺ Reset Effect
+### Reset Effect
 
 The **Reset** button restores the default configuration. Default values:
 
@@ -291,7 +291,6 @@ A frontend and WebGL experiment focused on interactive graphics, creative develo
 ## Acknowledgements
 
 Special thanks to the open-source community and React Bits for the original LaserFlow concept and implementation.
-
 ---
 
 *Built with React + Three.js + GLSL ✦*
