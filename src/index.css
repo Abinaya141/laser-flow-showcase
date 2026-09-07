@@ -24,29 +24,45 @@ input {
     font: inherit;
 }
 
-/* EXPERIENCE */
+/* ========================================
+   EXPERIENCE
+======================================== */
+
 .experience {
     position: relative;
+
     width: 100%;
     height: 100vh;
+
     overflow: hidden;
+
     background: #030106;
 }
 
-/* LASER BACKGROUND */
+/* ========================================
+   LASER BACKGROUND
+======================================== */
+
 .laser-background {
     position: absolute;
+
     inset: 0;
+
     z-index: 0;
+
     width: 100%;
     height: 100%;
 }
 
 .background-overlay {
     position: absolute;
+
     inset: 0;
+
     z-index: 1;
+
     pointer-events: none;
+
     background:
         radial-gradient(circle at 58% 50%,
             transparent 5%,
@@ -54,21 +70,33 @@ input {
             rgba(3, 1, 6, 0.65) 100%);
 }
 
-/* CUSTOM CURSOR */
+/* ========================================
+   CUSTOM CURSOR
+======================================== */
+
 .cursor-glow {
     position: fixed;
+
     left: 50%;
     top: 50%;
+
     width: 18px;
     height: 18px;
+
     transform: translate(-50%, -50%);
+
     border: 1px solid rgba(255, 121, 198, 0.85);
+
     border-radius: 50%;
+
     pointer-events: none;
+
     z-index: 100;
+
     box-shadow:
         0 0 12px rgba(255, 121, 198, 0.7),
         0 0 30px rgba(255, 121, 198, 0.3);
+
     transition:
         width 0.2s ease,
         height 0.2s ease,
@@ -80,39 +108,61 @@ input {
     height: 28px;
 }
 
-/* NAVBAR */
+/* ========================================
+   NAVBAR
+======================================== */
+
 .navbar {
     position: absolute;
+
     top: 0;
     left: 0;
     right: 0;
+
     z-index: 10;
+
     height: 80px;
+
     display: flex;
+
     align-items: center;
     justify-content: space-between;
+
     padding: 0 5vw;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
     background: rgba(3, 1, 6, 0.2);
+
     backdrop-filter: blur(12px);
 }
 
 /* Brand */
+
 .brand {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     font-size: 12px;
+
     font-weight: 700;
+
     letter-spacing: 0.18em;
 }
 
 .brand-dot {
     width: 8px;
     height: 8px;
+
     flex-shrink: 0;
+
     border-radius: 50%;
+
     background: #ff79c6;
+
     box-shadow:
         0 0 10px #ff79c6,
         0 0 25px #ff79c6;
@@ -122,23 +172,35 @@ input {
 
 .nav-links {
     display: flex;
+
     align-items: center;
+
     gap: 32px;
 }
 
 .nav-links button {
     appearance: none;
+
     border: 0;
     outline: 0;
+
     padding: 0;
     margin: 0;
+
     background: transparent;
+
     color: rgba(255, 255, 255, 0.45);
+
     font-family: "Inter", sans-serif;
+
     font-size: 10px;
+
     font-weight: 500;
+
     letter-spacing: 0.16em;
+
     cursor: pointer;
+
     transition:
         color 0.25s ease,
         text-shadow 0.25s ease;
@@ -146,23 +208,35 @@ input {
 
 .nav-links button:hover {
     background: transparent;
+
     color: #ffffff;
+
     text-shadow:
         0 0 15px rgba(255, 121, 198, 0.5);
 }
 
 /* GitHub */
+
 .github-button {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
+
     padding: 9px 16px;
+
     border: 1px solid rgba(255, 255, 255, 0.16);
+
     border-radius: 100px;
+
     color: #ffffff;
+
     text-decoration: none;
+
     font-size: 11px;
+
     background: rgba(255, 255, 255, 0.04);
+
     transition:
         border-color 0.25s ease,
         background 0.25s ease,
@@ -171,54 +245,82 @@ input {
 
 .github-button:hover {
     border-color: rgba(255, 121, 198, 0.7);
+
     background: rgba(255, 121, 198, 0.1);
+
     box-shadow:
         0 0 25px rgba(255, 121, 198, 0.12);
 }
 
-/* HERO  */
+/* ========================================
+   HERO
+======================================== */
+
 .hero {
     position: absolute;
+
     z-index: 5;
+
     left: 8vw;
+
     top: 50%;
+
     transform: translateY(-50%);
+
     width: min(540px, 45vw);
 }
 
 /* Eyebrow */
+
 .eyebrow {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     margin-bottom: 22px;
+
     font-size: 10px;
+
     letter-spacing: 0.2em;
+
     color: rgba(255, 255, 255, 0.5);
 }
 
 .eyebrow span {
     width: 25px;
     height: 1px;
+
     flex-shrink: 0;
+
     background: #ff79c6;
+
     box-shadow:
         0 0 12px #ff79c6;
 }
 
 /* Heading */
+
 .hero h1 {
     margin: 0;
+
     font-family: "Space Grotesk", sans-serif;
+
     font-size: clamp(58px, 8vw, 120px);
+
     line-height: 0.84;
+
     letter-spacing: -0.07em;
+
     font-weight: 600;
 }
 
 .hero h1 span {
     color: transparent;
+
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.65);
+
     transition:
         color 0.3s ease,
         -webkit-text-stroke-color 0.3s ease;
@@ -229,33 +331,52 @@ input {
 }
 
 /* Description */
+
 .hero p {
     max-width: 400px;
+
     margin: 30px 0;
+
     font-size: 14px;
+
     line-height: 1.7;
+
     color: rgba(255, 255, 255, 0.55);
 }
 
 /* Hero buttons */
+
 .hero-actions {
     display: flex;
+
     align-items: center;
+
     gap: 18px;
 }
 
 .primary-button {
     appearance: none;
+
     padding: 13px 20px;
+
     border: 0;
+
     border-radius: 4px;
+
     background: #ffffff;
+
     color: #050208;
+
     font-family: "Inter", sans-serif;
+
     font-size: 10px;
+
     font-weight: 700;
+
     letter-spacing: 0.12em;
+
     cursor: pointer;
+
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
@@ -279,7 +400,11 @@ input {
     color: rgba(255, 255, 255, 0.35);
 }
 
-CONTROL PANEL .control-panel {
+/* ========================================
+   CONTROL PANEL
+======================================== */
+
+.control-panel {
     position: absolute;
 
     z-index: 10;
@@ -368,14 +493,6 @@ CONTROL PANEL .control-panel {
     box-shadow:
         0 0 10px #ff79c6;
 
-
-
-
-
-
-
-
-
     animation: livePulse 1.5s infinite;
 }
 
@@ -393,7 +510,10 @@ CONTROL PANEL .control-panel {
     }
 }
 
-/* CONTROLS  */
+/* ========================================
+   CONTROLS
+======================================== */
+
 .control {
     margin-top: 18px;
 }
@@ -419,6 +539,7 @@ CONTROL PANEL .control-panel {
 }
 
 /* Color input */
+
 .control input[type="color"] {
     appearance: none;
 
@@ -495,7 +616,10 @@ CONTROL PANEL .control-panel {
     cursor: pointer;
 }
 
-/* COLOR PRESETS  */
+/* ========================================
+   COLOR PRESETS
+======================================== */
+
 .preset-section {
     margin-top: 18px;
 }
@@ -548,7 +672,10 @@ CONTROL PANEL .control-panel {
     outline-offset: 3px;
 }
 
-/* PANEL ACTIONS  */
+/* ========================================
+   PANEL ACTIONS
+======================================== */
+
 .panel-actions {
     display: grid;
 
@@ -561,21 +688,37 @@ CONTROL PANEL .control-panel {
 
 .panel-actions button {
     appearance: none;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 6px;
+
     width: 100%;
+
     padding: 10px 8px;
+
     border: 1px solid rgba(255, 255, 255, 0.12);
+
     border-radius: 6px;
+
     background: rgba(255, 255, 255, 0.035);
+
     color: rgba(255, 255, 255, 0.65);
+
     font-family: "Inter", sans-serif;
+
     font-size: 8px;
+
     font-weight: 500;
+
     letter-spacing: 0.12em;
+
     cursor: pointer;
+
     transition:
         color 0.2s ease,
         border-color 0.2s ease,
@@ -597,39 +740,64 @@ CONTROL PANEL .control-panel {
     transform: translateY(0) scale(0.98);
 }
 
-/* KEYBOARD HINT  */
+/* ========================================
+   KEYBOARD HINT
+======================================== */
+
 .keyboard-hint {
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 7px;
+
     margin-top: 15px;
+
     font-size: 7px;
+
     letter-spacing: 0.1em;
+
     color: rgba(255, 255, 255, 0.28);
 }
 
 .keyboard-hint span {
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     min-width: 32px;
+
     padding: 4px 6px;
+
     border: 1px solid rgba(255, 255, 255, 0.12);
+
     border-radius: 4px;
+
     background: rgba(255, 255, 255, 0.035);
+
     color: rgba(255, 255, 255, 0.65);
+
     font-size: 7px;
+
     letter-spacing: 0.08em;
 }
 
 .keyboard-hint label {
     margin-right: 4px;
+
     font-size: 7px;
+
     color: rgba(255, 255, 255, 0.3);
 }
 
-/* PULSE  */
+/* ========================================
+   PULSE
+======================================== */
+
 .experience.is-pulsing .background-overlay {
     animation: screenPulse 0.45s ease-out;
 }
@@ -637,7 +805,9 @@ CONTROL PANEL .control-panel {
 .experience.is-pulsing .cursor-glow {
     width: 55px;
     height: 55px;
+
     border-color: #ffffff;
+
     box-shadow:
         0 0 20px #ff79c6,
         0 0 60px rgba(255, 121, 198, 0.8);
@@ -657,40 +827,63 @@ CONTROL PANEL .control-panel {
     }
 }
 
-FOOTER .footer {
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
     position: absolute;
+
     z-index: 10;
+
     left: 5vw;
     right: 5vw;
+
     bottom: 28px;
+
     display: flex;
+
     align-items: center;
+
     gap: 35px;
+
     font-size: 8px;
+
     letter-spacing: 0.15em;
+
     color: rgba(255, 255, 255, 0.35);
 }
 
 .footer div {
     display: flex;
+
     flex-direction: column;
+
     gap: 5px;
 }
 
 .footer strong {
     color: rgba(255, 255, 255, 0.72);
+
     font-weight: 500;
 }
 
 .footer .status {
     flex-direction: row;
+
     align-items: center;
+
     gap: 8px;
+
     margin-left: auto;
+
     color: #ff79c6;
 }
 
-/* RESPONSIVE */
+/* ========================================
+   RESPONSIVE
+======================================== */
+
 @media (max-width: 1000px) {
     .hero {
         left: 6vw;
