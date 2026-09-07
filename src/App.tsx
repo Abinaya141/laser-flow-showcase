@@ -130,7 +130,7 @@ function App() {
       <nav className="navbar" onClick={(event) => event.stopPropagation()}>
         <div className="brand">
           <span className="brand-dot" />
-          ABINAYA LAB
+          Laser Flow
         </div>
 
         <div className="nav-links">
