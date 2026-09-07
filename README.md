@@ -6,7 +6,7 @@ An experimental WebGL showcase featuring mouse interaction, customizable laser c
 
 ## Preview
 
-[Laser Flow UI Preview](src/assets/laser-flow.png)
+![Laser Flow UI Preview](./src/assets/laser-flow.png)
 
 ## About the Project
 
