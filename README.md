@@ -1,4 +1,3 @@
-```markdown
 # ✦ Laser Flow — Interactive WebGL Experience
 
 A cinematic, interactive laser-flow experience built with **React, TypeScript, Three.js, and GLSL**.
